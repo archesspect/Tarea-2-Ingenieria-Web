@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>tarea 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/estilos.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+
+     <header>
+     <section>
+       <div class="container-fluid">
+           <h1>Formulario</h1>
+     
+        <form id="formulario" class="row g-3 needs-validation" novalidate>
+              <ul>
+                   <li>
+                        <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+                        <input type="String" class="form-control" id="nombrecompleto" maxlength="50" placeholder="Nombre Completo" required>
+                        
+                        <div class="invalid-feedback">
+                           Completar el campo con su nombre completo
+                       </div>
+                       <div class="valid-feedback">
+                           Campo correcto
+                       </div>
+                   </li>
+                   <li></li> 
+                   <li>
+                    <label for="rut" class="form-label">RUT</label>
+                    <li>
+                      <input type="text" name="rut" required="required" pattern="\d{8,9}-[\d|kK]{1}" placeholder="XXXXXXXX-X">
+                       <div class="invalid-feedback">
+                         Campo RUT Inválido, porfavor ingresar con guión y digito verificador
+                     </div>
+                     <div class="valid-feedback">
+                         Campo válido
+                     </div>
+                    </li>
+                   </li>
+                   <li></li> 
+                   <li>
+                       <label for="nombre">Correo Electrónico</label>
+                       <input class="form-control input-lg" type="email" id="email" name="email" data-validation="email"  placeholder="Introduce tu correo electronico">
+                       <div class="invalid-feedback">
+                         Campo Correo Inválido
+                       </div>
+                       <div class= "valid-feedback">
+                          Correo Electrónico correcto
+                       </div>
+                  </li>
+                  <li></li> 
+                   <li>
+                    <label for="nombre">Número telefónico</label>
+                    <li>
+                      <input type="number" id="phone" name="phone" pattern="[0-9]{9}" required placeholder="Formato : 912345678">
+                      <div class="invalid-feedback">
+                        Campo Inválido, porfavor ingresar un número de 9 digitos sin código identificador internacional
+                      </div>
+                      <div class= "valid-feedback">
+                         Campo válido
+                      </div>
+                    </li>
+                  </li>
+                  <li></li> 
+                    <label>Seleccionar uno o más lenguajes de programación de interés</label>
+                    <li>
+                      <input type="checkbox" id="opcion0"/> Python
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion1"/> TypeScript
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion2"/> C++
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion3"/> C#
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion4"/> PHP
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion5"/> Ruby on Rails
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion6"/> Java
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion7"/> R
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion8"/> Groovy
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion9"/> Go
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion10"/> Swift
+                    </li>
+                    <li>
+                      <input type="checkbox" id="opcion11"/> Kotlin
+                    </li> 
+                    <div class="invalid-feedback">
+                      Porfavor rellenar uno o mas campos
+                    </div>
+                    <div class= "valid-feedback">
+                       Campo válido
+                    </div>
+                  <li></li> 
+                    <label>¿Cuál es su nivel de experiencia en programación ?</label>
+                      <li>
+                        <li>
+                          <input type="radio" id="opcion1" name="¿Cuál es su nivel de experiencia en programación?" value="1">
+                          Alto
+                        </li>
+                        <li>
+                          <input type="radio" id="opcion2" name="¿Cuál es su nivel de experiencia en programación?" value="2">
+                           Medio
+                        </li>
+                        <li>
+                          <input type="radio" id="opcion3" name="¿Cuál es su nivel de experiencia en programación?" value="3">
+                           Bajo
+                        </li>
+                      </li>
+                    <li></li> 
+                    <label value="Mark" required>Nivel de conocimiento sobre los siguientes lenguajes de programación:</label>
+                      <li> Python
+                        <input type="range" min="0" max="200" required>
+                      </li>
+                      <li> Java
+                        <input type="range" min="0" max="200" required>
+                      </li>
+                      <li>C++
+                        <input type="range" min="0" max="200" required>
+                      </li>
+                      <li></li> 
+                      <label class="form-check-label" aria-required="true">Seleccione cuál de los siguientes cursos les ha tomado mayor dificultad:
+                        <li>
+                          <input type="checkbox" id="opcion1"/> Estructura de Datos
+                        </li>
+                        <li>
+                          <input type="checkbox" id="opcion2"/> Inteligencia Artificial
+                        </li>
+                        <li>
+                          <input type="checkbox" id="opcion3"/> Interacción Humano-Computador
+                        </li>
+                        <li>
+                          <input type="checkbox" id="opcion4"/> Sistemas Operativos
+                        </li>
+                        <li>Otro
+                          <li>
+                            <textarea id="otro" maxlength="500" ></textarea>
+                          </li>
+                        </li>
+                        <li></li> 
+                      </label>
+                    <li> Queremos conocer su opinión acerca de la escuela
+                      <li>
+                        <textarea id=" Queremos conocer su opinión acerca de la escuela" maxlength="500" required></textarea>
+                        <div class="invalid-feedback">
+                          Porfavor complete el campo
+                        </div>
+                        <div class= "valid-feedback">
+                           Campo correcto
+                        </div>
+                      </li>
+                    </li>
+                    <li></li>
+                    <li></li>
+                   <li>
+                    <input type="submit" onclick="hideshow()" value="Enviar" >
+                    <input type="button" onclick="limpiarFormulario()" value="Limpiar formulario">
+                   </li> 
+
+              </ul>
+            </form>
+       </div>
+     </section>
+        <script data-main="js/inicio" src="js/require-jquery.js"></script>      
+     </body>
+</html>
