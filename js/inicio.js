@@ -40,19 +40,19 @@ function caracteresCorreoValido(email, div) {
     }
 }
 
-function validarCheckbox() {
-    var formulario = document.checkbox;
-    var elementosTotales = formulario.checkbox.elements.length;
-    var total_checked = 0;
-    for (i = 0; i < elementosTotales; i++) {
-        if ((formulario.elements[i].type == "checkbox") &&
-            (formulario.elements[i].checked)) {
-            total_checked++;
-        }
-    }
-    if (formulario.elements[0])
-        print("Porfavor rellenar aunque sea un campo !")
-}
+// function validarCheckbox() {
+//     var formulario = document.checkbox;
+//     var elementosTotales = formulario.checkbox.elements.length;
+//     var total_checked = 0;
+//     for (i = 0; i < elementosTotales; i++) {
+//         if ((formulario.elements[i].type == "checkbox") &&
+//             (formulario.elements[i].checked)) {
+//             total_checked++;
+//         }
+//     }
+//     if (formulario.elements[0])
+//         print("Porfavor rellenar aunque sea un campo !")
+// }
 
 function limpiarFormulario() {
     document.getElementById("formulario").reset();
@@ -104,33 +104,6 @@ function validar_checkbox() {
     }
 }
 
-//Validar checkbox + text area
-function validar_checkbox2() {
-    //Obtener hijos dentro de etiqueta < div >
-    var cont = document.getElementById('checkbox2').children;
-    var i = 0;
-    var al_menos_uno = false;
-    //Recorrido de checkbox's
-    while (i < cont.length) {
-        // Verifica si el elemento es un checkbox
-        if (cont[i].tagName == 'INPUT' && cont[i].type == 'checkbox') {
-            // Verifica si esta checked
-            if (cont[i].checked) {
-                al_menos_uno = true;
-            }
-        }
-        i++
-    }
-    //Valida si al menos un checkbox es checked
-    if (!al_menos_uno) {
-        alert('Hemos recibido sus datos,pronto nos estaremos comunicando con usted');
-        if (e.preventDefault) {
-            e.preventDefault();
-        } else {
-            e.returnValue = false;
-        }
-    }
-}
 
 function alerta(){
     alerta('El formulario ha sido enviado con éxito!')

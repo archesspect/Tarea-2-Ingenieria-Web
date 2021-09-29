@@ -20,12 +20,12 @@ body{
     margin-left: auto;
 }
   
-  $color_fondo: #F0FFFF;
   .container-fluid {
     width: 100%;
     @include make-container(30px);
   }
 
+  $color_fondo: #F0FFFF;
   .container-fluid {
     background-color: $color_fondo;
   }

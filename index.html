@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>tarea 2</title>
+  <title>tarea 2 - Ingeniería web</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,6 +29,7 @@
 
         <form id="formulario" class="row g-3 needs-validation" data-toggle="validator">
           <ul>
+            <!-- Pregunta N°1 -->
             <li>
               <label for="nombrecompleto" class="form-label">Nombre Completo</label>
               <input type="String" class="form-control" id="nombrecompleto" maxlength="50" placeholder="Nombre Completo"
@@ -42,6 +43,8 @@
               </div>
             </li>
             <br/>
+
+            <!-- Pregunta N°2 -->
             <li>
               <label for="rut" class="form-label">RUT</label>
             <li>
@@ -56,6 +59,8 @@
             </li>
             </li>
             <br/>
+
+            <!-- Pregunta N°3 -->
             <li>
               <label for="correo">Correo Electrónico</label>
               <input class="form-control input-lg" type="email" id="email" name="email" data-validation="email" required
@@ -68,6 +73,8 @@
               </div>
             </li>
             <br/>
+
+            <!-- Pregunta N°4 -->
             <li>
               <label for="numero">Número telefónico</label>
             <li>
@@ -82,9 +89,11 @@
             </li>
             </li>
             <br/>
+
+            <!-- Pregunta N°5 -->
             <div id="checkbox">
               <label for="lenguaje">Seleccionar uno o más lenguajes de programación de interés</label>
-              <br/>
+              <br />
               <input type="checkbox" id="checkbox1" value="1" />
               <label for="lenguaje1">Python</label>
               <br />
@@ -111,7 +120,7 @@
               <br />
               <input type="checkbox" id="checkbox9" value="9" />
               <label for="lenguaje9">Groovy</label>
-              <br/>
+              <br />
               <input type="checkbox" id="checkbox10" value="10" />
               <label for="lenguaje10">Go</label>
               <br />
@@ -120,87 +129,93 @@
               <br />
               <input type="checkbox" id="checkbox12" value="12" />
               <label for="lenguaje12">Kotlin</label>
-          </div>
-          <br>
-      <div class="form-group" required>
-        <label>¿Cuál es su nivel de experiencia en programación?</label>
-        <div class="radio">
-          <li>
-            <input type="radio" id="opcion1" name="¿Cuál es su nivel de experiencia en programación?" value="1"
-              required>
-            Alto
+            </div>
             <br/>
-            <input type="radio" id="opcion2" name="¿Cuál es su nivel de experiencia en programación?" value="2"
-              required>
-            Medio
-            <br/>
-            <input type="radio" id="opcion3" name="¿Cuál es su nivel de experiencia en programación?" value="3"
-              required>
-            Bajo
-          </li>
-          <div class="valid-feedback">
-            Campo correcto
-          </div>
-        </div>
-      </div>
-      <li></li>
-      <label value="Mark" required>Nivel de conocimiento sobre los siguientes lenguajes de programación:</label>
-      <li> Python
-        <input type="range" min="0" max="100" required>
-      </li>
-      <li> Java
-        <input type="range" min="0" max="100" required>
-      </li>
-      <li>C++
-        <input type="range" min="0" max="100" required>
-      </li>
-      <br/>
 
-        <div id="checkbox2">
-          <label>Seleccione cuál de los siguientes cursos les ha tomado mayor dificultad</label>
-          <br/>
-          <input type="checkbox" id="checkbox13" value="1" />
+            <!-- Pregunta N°6 -->
+            <div class="form-group" required>
+              <label>¿Cuál es su nivel de experiencia en programación?</label>
+              <div class="radio">
+                <li>
+                  <input type="radio" id="opcion1" name="¿Cuál es su nivel de experiencia en programación?" value="1"
+                    required>
+                  Alto
+                  <br />
+                  <input type="radio" id="opcion2" name="¿Cuál es su nivel de experiencia en programación?" value="2"
+                    required>
+                  Medio
+                  <br />
+                  <input type="radio" id="opcion3" name="¿Cuál es su nivel de experiencia en programación?" value="3"
+                    required>
+                  Bajo
+                </li>
+                <div class="valid-feedback">
+                  Campo correcto
+                </div>
+              </div>
+            </div>
+            <br/>
+
+            <!-- Pregunta N°7 -->
+            <label value="Mark" novalidate>Nivel de conocimiento sobre los siguientes lenguajes de programación:</label>
+            <li> Python
+              <input type="range" min="0" max="100" required>
+            </li>
+            <li> Java
+              <input type="range" min="0" max="100" required>
+            </li>
+            <li>C++
+              <input type="range" min="0" max="100" required>
+            </li>
+            <br/>
+
+            <!-- Pregunta N°8 -->
+            <div id="checkbox2" novalidate>
+              <label>Seleccione cuál de los siguientes cursos les ha tomado mayor dificultad</label>
+              <br />
+              <input type="checkbox" id="checkbox13" value="1" />
               <label for="lenguaje1">Estructura de Datos</label>
-          <br />
-          <input type="checkbox" id="checkbox14" value="2" />
+              <br />
+              <input type="checkbox" id="checkbox14" value="2" />
               <label for="lenguaje2">Inteligencia Artificial</label>
-          <br />
-          <input type="checkbox" id="checkbox15" value="3" />
+              <br />
+              <input type="checkbox" id="checkbox15" value="3" />
               <label for="lenguaje3">Interacción Humano-Computador</label>
-          <br/>
-          <input type="checkbox" id="checkbox16" value="4" />
+              <br />
+              <input type="checkbox" id="checkbox16" value="4" />
               <label for="lenguaje4">Sistemas Operativos</label>
-          <br/>
-          <input type="checkbox" id="checkbox17" value="5" >
-            <label for="Otro">Otro - Porfavor justificar
-            <input type="text" maxlenght="500" placeholder=" . . ." border=""/></label><br>
-        </div>
+              <br />
+              <input type="checkbox" id="checkbox17" value="5">
+              <label for="Otro">Otro - Porfavor justificar
+                <input type="text" maxlenght="500" placeholder=" . . ." border="" /></label><br>
+            </div>
+            <br/>
 
-        <br/>
-      <li> Queremos conocer su opinión acerca de la escuela
-      <li>
-        <textarea id=" Queremos conocer su opinión acerca de la escuela" maxlength="500" required></textarea>
-        <div class="invalid-feedback">
-          Porfavor complete el campo
-        </div>
-        <div class="valid-feedback">
-          Campo Válido
-        </div>
-      </li>
-      </li>
-      <br/>
-      <br/>
-      <li>
-        <input type="submit" onclick="validar_checkbox();validar_checkbox2()"  value="Enviar">
-        <input type="button" onclick="limpiarFormulario()" value="Limpiar formulario">
-      </li>
-      </ul>
-      </form>
+            <!-- Pregunta N°9 -->
+            <li> Queremos conocer su opinión acerca de la escuela
+              <li>
+                <textarea id=" Queremos conocer su opinión acerca de la escuela" maxlength="500" required></textarea>
+                <div class="invalid-feedback">
+                  Porfavor complete el campo
+                </div>
+                <div class="valid-feedback">
+                  Campo Válido
+                </div>
+              </li>
+            </li>
+            <br/>
+            <li>
+              <input type="submit" onclick="validar_checkbox();alerta();hideshow()" value="Enviar">
+              <input type="button" onclick="limpiarFormulario()" value="Limpiar formulario">
+            </li>
+            <br/>
+          </ul>
+        </form>
       </div>
     </section>
-    
+
     <!-- Librerías -->
-    <script src="https://www.mipagina.com/librerias/jquery.min.js"></script> 
+    <script src="https://www.mipagina.com/librerias/jquery.min.js"></script>
     <script src="https://www.mipagina.com/librerias/jquery.validate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
     <script data-main="js/inicio" src="js/require-jquery.js"></script>
