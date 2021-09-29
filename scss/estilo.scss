@@ -19,26 +19,13 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-  // Usage
+  
+  $color_fondo: #F0FFFF;
   .container-fluid {
     width: 100%;
     @include make-container(30px);
   }
 
-  input[type="text"]{
-     width:100%;
+  .container-fluid {
+    background-color: $color_fondo;
   }
-
-  .navbar ul{
-   list-style: none;
-   
-  }
-  .navbar-collapse{
-    justify-content: flex-end;
-   }
-
-   .btn btn-primary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }

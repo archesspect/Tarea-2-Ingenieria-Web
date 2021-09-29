@@ -11,16 +11,8 @@ body {
   
   input[type="text"] {
     width: 100%; }
-  
-  .navbar ul {
-    list-style: none; }
-  
-  .navbar-toggler {
-    text-align: right; }
 
-.btn-primary{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .container-fluid {
+    background-color: #F0FFFF;
+  }
   
