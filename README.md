@@ -5,6 +5,6 @@
  -Se uso Preprocesador SASS para darle color al background
 
 
- Alumno : Germán Tabilo M.
+ Alumno : Germán Tabilo M. - 
  Profesora : Sandra Cano
 
